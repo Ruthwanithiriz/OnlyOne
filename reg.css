@@ -1,0 +1,173 @@
+/* Background Layout */
+body {
+  margin: 0;
+  padding: 0;
+  /* Ensure this path is correct for your school background image */
+background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("school-background.jpg") center center no-repeat;
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.overlay {
+  background: rgba(255, 255, 255, 0.85);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow-y: auto; /* Allows scrolling if content exceeds viewport height */
+  padding: 60px 0;
+}
+
+.registration-box {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 80px; /* Adjusted to be slightly larger */
+  height: auto;
+}
+
+h1 {
+  font-size: 28px;
+  margin-top: 10px;
+  color: #333;
+}
+
+h2, h3 {
+  color: #333;
+  border-left: 4px solid #4e8ef7; /* Accent border */
+  padding-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px; /* Added some bottom margin */
+}
+
+/* Inputs */
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #444;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  font-size: 14px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #4e8ef7;
+}
+
+/* Checkbox specific styling */
+input[type="checkbox"] {
+  width: auto; /* Override 100% width for checkboxes */
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+label input[type="checkbox"] {
+  display: inline-block; /* Keep checkbox and label text on the same line */
+}
+
+/* Readonly Display */
+.readonly-box {
+  background-color: #f2f2f2;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  color: #555; /* Slightly darker text for readability */
+}
+
+/* Buttons */
+button {
+  margin-top: 25px;
+  background-color: #4e8ef7;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #3a75dc;
+}
+
+/* Fieldsets for Students */
+fieldset {
+  margin-top: 25px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  background: #f7f9fc;
+}
+
+legend {
+  font-weight: bold;
+  color: #4e8ef7;
+  font-size: 16px;
+  padding: 0 10px; /* Padding for the legend text */
+  background-color: #f7f9fc; /* Match fieldset background */
+  border-radius: 5px; /* Slightly rounded corners for legend */
+}
+/* --- Media Queries for Responsiveness --- */
+
+/* For screens smaller than 768px (typical tablets and mobiles) */
+@media (max-width: 768px) {
+  .container {
+    width: 95%; /* Take even more width on smaller screens to maximize space */
+    padding: 20px; /* <<< Reduce padding to save space >>> */
+    margin: 10px auto; /* Less vertical margin on smaller screens */
+  }
+
+  /* ... other font-size adjustments you can ignore if not desired ... */
+
+  button {
+    width: 100%; /* <<< Make buttons full width on small screens >>> */
+    padding: 12px;
+  }
+}
+
+/* For very small screens (e.g., older mobile phones) */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px; /* <<< Even less padding on very small screens >>> */
+  }
+  /* ... other font-size and logo adjustments ... */
+}
+/* Styles for the payment details summary */
+#paymentDetails div {
+  background-color: #e9f5ff;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #cce7ff;
+  margin-bottom: 10px;
+}
+
+#paymentDetails strong {
+  color: #2b6cb0;
+}
